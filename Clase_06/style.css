@@ -1,0 +1,59 @@
+
+.header {
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    color: #3f3f3f;
+}
+
+.container {
+    font-family: 'Rajdhani', sans-serif;
+    color: #3f3f3f;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid #3f3f3f;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    width: 90%;
+    height: auto;
+}
+
+.active {
+    box-shadow: 2px 2px 5px #3f3f3f;
+}
+
+
+/* -------------------------------- Modo Dark ------------------------------- */
+.dark {
+    background-color: #3f3f3f;
+}
+
+.dark .header {
+    background-color: #3f3f3f;
+    color: aliceblue;
+}
+
+.dark .container {
+    background-color: #3f3f3f;
+    color: aliceblue;
+}
+
+.dark .card {
+    border: 1px solid #ded9d9;
+
+}
