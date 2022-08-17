@@ -1,0 +1,3 @@
+- Seleccionar el elemento a observar
+- Seleccionar a que evento reaccionara
+- Ejecutar una funciones
