@@ -20,9 +20,9 @@ const gatitos = [
 ];
 
 const galeria = document.querySelector('.container');
-//const loading = document.createElement('img');
-//loading.setAttribute('src','img/loading.gif');  
-//galeria.appendChild(loading);
+const loading = document.createElement('img');
+loading.setAttribute('src','img/loading.gif');  
+galeria.appendChild(loading);
 
 function crearCard(gatito){
 
@@ -46,11 +46,12 @@ function favorito(id){
         }
     }); 
     // Refresco la galaria
-    galeria.innerHTML ='';
     renderizarCards();
 }
 
 function renderizarCards(){
+    galeria.innerHTML ='';
+
     gatitos.forEach(gatito => {
         crearCard(gatito);
         //console.table(gatito);
@@ -60,4 +61,4 @@ function renderizarCards(){
 }
 
 
-setTimeout(renderizarCards, 1000);
+setTimeout(renderizarCards, 2000);
