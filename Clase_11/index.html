@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/minty/bootstrap.min.css">
+    <link rel="shortcut icon" href="formulario.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1 class="text-primary">Contactos</h1>
+        <form action="" class="p-4">
+            <div id="mensaje" class="oculto alert alert-dismissible alert-info">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong> Te falto completar un dato!</strong>
+            </div>
+
+            <label for="nombre">Nombre</label>
+            <input id="nombre" class="form-control" type="text" >
+
+            <label for="email">Email</label>
+            <input id="email" class="form-control" type="text" >
+
+            <label for="consulta">Consulta</label>
+            <textarea id="consulta" class="form-control" name="consulta"  cols="30" rows="10"></textarea>
+
+            <button class="btn btn-success mt-2" type="submit">Enviar</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
