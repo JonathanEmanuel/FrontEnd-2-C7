@@ -9,6 +9,7 @@ if( !jwt ){
 /* ------ comienzan las funcionalidades una vez que carga el documento ------ */
 window.addEventListener('load', function () {
 
+  
   /* ---------------- variables globales y llamado a funciones ---------------- */
   const btnCerrarSesion = document.querySelector('#closeApp');
   const formCrearTarea =  document.querySelector('form.nueva-tarea');
@@ -84,12 +85,7 @@ window.addEventListener('load', function () {
   /* -------------------------------------------------------------------------- */
 
   formCrearTarea.addEventListener('submit', function (event) {
-    event.preventDefault();
-    console.log('Creando tarea ', inputTarea.value );
-
-    // Solicitud a la API con el method POST
-
-
+    
   });
 
 
@@ -113,10 +109,6 @@ window.addEventListener('load', function () {
       </li>
       `;
     });
-
-
-
-
 
 
   };
