@@ -141,9 +141,7 @@ window.addEventListener('load', function () {
     listado.forEach(tarea => {
 
       if( tarea.completed) {
-
         contador++;
-
         contenedorTareasTerminadas.innerHTML += `
           <li class="tarea" data-aos="fade-up">
             <div class="hecha">
@@ -165,7 +163,7 @@ window.addEventListener('load', function () {
             }"><i class="fa-regular fa-circle"></i></button>
             <div class="descripcion">
               <p class="nombre">${tarea.description}</p>
-              <p class="timestamp">${tarea.createdAt}</p>
+              <p class="timestamp">${  new Date(tarea.createdAt).toLocaleDateString()  }</p>
             </div>
           </li>
         `
