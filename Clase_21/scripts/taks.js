@@ -192,9 +192,11 @@ window.addEventListener('load', function () {
   /* -------------------------------------------------------------------------- */
   function botonesCambioEstado(elemento) {
     console.log(elemento);
+    console.log(elemento.classList.contains('incompleta')); // Obtiene un true o false si exite la clase
+
     
     let tarea = {
-      completed: true
+      completed: !elemento.classList.contains('incompleta') ? true : false
     }
 
     const url = `https://ctd-todo-api.herokuapp.com/v1/tasks/${elemento.id} `;
