@@ -51,6 +51,14 @@ window.addEventListener('load', function () {
             if( data.jwt){ // Guardo el token
                 localStorage.setItem('jwt', data.jwt);
                 location.replace('mis-tareas.html');
+            } else {
+                
+                Swal.fire({
+                    title: 'To DO',
+                    text: 'Usuario o Contaseña invalidos',
+                    icon: 'warning',
+                    confirmButtonText: 'Aceptar'
+                })
             }
 
        }).catch ( (response) => {
